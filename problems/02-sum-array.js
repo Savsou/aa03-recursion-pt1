@@ -13,9 +13,22 @@ sumArray([1, 2, 3, 4, 5]); // 15
 function sumArray(arr) {
   // Your code here
 
+  if (arr.length > 1) {
+    return 0;
+  } else {
+    return arr[0] + sumArray(arr.slice(1))
+  }
+
+  // if (arr.length > 1) {
+  //   return arr.pop() + sumArray(arr);
+  // } else {
+  //   return arr[0];
+  // }
+
 }
 
-sumArray([1, 2, 3]); //  6
+console.log(sumArray([1, 2, 3])); //  6
+console.log(sumArray([1, 2, 3, 4, 5])); // 15
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {

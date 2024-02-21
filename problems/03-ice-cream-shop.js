@@ -14,9 +14,10 @@ iceCreamShop([], 'honey lavender'); // false
 
 
 function iceCreamShop(flavors, favorite) {
-  // Your code here 
+
 }
 
+console.log(iceCreamShop(['pistachio', 'green tea', 'chocolate', 'mint chip'], 'green tea')); // true
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
